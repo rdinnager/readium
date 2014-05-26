@@ -578,6 +578,13 @@ body {
       display: none; }
     .share a:hover {
       color: #333333; }
+      
+/* Adding my own CSS (@ecologician) */
+.centeredImage {
+  text-align:center;
+  margin-top:0px;
+  margin-bottom:0px;
+  padding:0px; }
 
 .bottom-closer {
   width: 100%;
@@ -641,12 +648,3 @@ body {
       border-radius: 999em;
       line-height: 44px;
       padding: 0 18px; }
-      
-      /* Adding my own CSS (@ecologician) */
-      .centeredImage
-        {
-        text-align:center;
-        margin-top:0px;
-        margin-bottom:0px;
-        padding:0px;
-        }
