@@ -35,7 +35,9 @@
     {{! Styles'n'Scripts }}
     <link rel="stylesheet" type="text/css" media="screen" href="{{asset "css/main.css"}}" />
     <link rel="stylesheet" type="text/css" media="print" href="{{asset "css/print.css"}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset "js/tsi-inlineDisqussions-baccbdb/inlineDisqussions.css"}}" />
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+
     {{! Ghost outputs important style and meta data with this tag }}
     {{ghost_head}}
 
@@ -55,6 +57,7 @@
     <script src="{{asset "js/readingTime.min.js"}}"></script>
     <script src="{{asset "js/highlight.pack.js"}}"></script>
     <script>hljs.initHighlightingOnLoad();</script>
+    <script src="{{asset "js/tsi-inlineDisqussions-baccbdb/inlineDisqussions.js"}}"></script>
     
     <script>
         
@@ -77,6 +80,13 @@
       tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}  
     });
     </script>
+
+  <script>
+    disqus_shortname = 'mepheo';
+    jQuery(document).ready(function() {
+      jQuery("p").inlineDisqussions();
+    });
+  </script>
 
 </body>
 </html>
